@@ -1,0 +1,28 @@
+<ion-app>
+  <ion-header>
+    <ion-navbar>
+      <ion-title>
+       G00296946
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+ <ion-list>
+    <ion-item>
+      <div >
+        <weather *ngFor = [weather]>{{ weather|json }}></weather>
+        <h1>"Do something"</h1>
+        
+        <h2><strong>Temperature:</strong></h2>
+        <h2><strong>{{ weatherInfo.temp|json }} ({{ units }})</strong></h2>
+        
+        <h2><strong>Weather:</strong></h2>
+        <h2><strong>{{ weatherInfo.description|json }}</strong></h2>
+  
+      </div>
+    </ion-item>
+  </ion-list> 
+   
+  </ion-content>
+  </ion-app>
