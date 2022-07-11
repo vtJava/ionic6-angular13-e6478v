@@ -1,8 +1,8 @@
 import { Component, Input, VERSION, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { NavController } from '@ionic/angular';
-import { WeatherProvider } from './WeatherProvider';
-import { CityProvider } from './CityProvider';
+import { WeatherProvider } from '../themes/weather-provider';
+import { CityProvider } from '../themes/CityProvider';
 
 @Component({
  // selector: 'my-app',
