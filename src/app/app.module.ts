@@ -7,6 +7,7 @@ import { WeatherComponent } from './pages/weather.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CityProvider } from './pages/CityProvider';
 import { WeatherProvider } from './pages/WeatherProvider';
+import { weather } from './pages/weather';
 
 @NgModule({
   imports: [

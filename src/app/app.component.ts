@@ -1,5 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, Injectable, VERSION } from '@angular/core';
+import { weather } from './app/pages/weather';
 
 @Component({
   selector: 'my-app',
@@ -9,6 +10,8 @@ import { Component, Injectable, VERSION } from '@angular/core';
 @Injectable()
 export class AppComponent{
   
+anOtherPage: AnOtherPage;
+
   name = 'Ionic 6 Angular ' + VERSION.major;
   capital: Object = {};  //replace any with Object 
 
@@ -16,6 +19,10 @@ export class AppComponent{
     http
       .get('https://restcountries.com/v3.1/capital/Dublin')
       .subscribe((stuff) => (this.capital = stuff));
+  }
+
+  goAnOtherPage() {
+    this.navCtrl.setRoot(weather);
   }
 
   ionViewDidEnter() {
