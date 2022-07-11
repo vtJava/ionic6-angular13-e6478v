@@ -5,8 +5,8 @@ import { IonicModule } from '@ionic/angular';
 import { AppComponent } from './app.component';
 import { WeatherComponent } from './pages/weather.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CityProvider } from './pages/CityProvider';
-import { WeatherProvider } from './pages/WeatherProvider';
+import { WeatherProvider } from '../services/weather-provider';
+import { CityProvider } from '../services/CityProvider';
 
 @NgModule({
   imports: [
