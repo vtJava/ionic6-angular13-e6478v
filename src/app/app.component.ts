@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, Injectable, VERSION } from '@angular/core';
-import { weather } from './app/pages/weather';
+import { weather } from '.app.pages/weather';
 
 @Component({
   selector: 'my-app',
