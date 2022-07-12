@@ -1,13 +1,12 @@
-import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { NgModule,NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { IonApp,IonicModule } from '@ionic/angular';
+import { IonicModule } from '@ionic/angular';
 import { AppComponent } from './app.component';
 import { WeatherComponent } from '../pages/weather';
 import { HttpClientModule } from '@angular/common/http';
 import { WeatherProvider } from '../services/weather-provider.service';
 import { CityProvider } from '../services/city-provider.service';
-import {IonicStorageModule } from '@ionic';
 
 
 @NgModule({
@@ -15,8 +14,7 @@ import {IonicStorageModule } from '@ionic';
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    IonicStorageModule.forRoot(AppComponent),
-    IonApp,
+    //IonicStorageModule.forRoot(AppComponent),
     IonicModule.forRoot(),
     
   ],
