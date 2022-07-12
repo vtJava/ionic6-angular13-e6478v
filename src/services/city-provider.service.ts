@@ -17,5 +17,17 @@ export class CityProvider {
     return this.http.get(this.url + cityName);
   }
 
-  getProvCity() { return CityProvider };
+  //const urlSerializer = new DefaultUrlSerializer();
+    //const stateUrlTree: UrlTree = urlSerializer.parse(url);
+    //const rootOutlets = stateUrlTree.root.children;
+/*
+    return {
+        segmentGroup: isRoot ? stateUrlTree.root : rootOutlets[outletName],
+        isPageNavigation: isPageNav,
+        isRootSegmentGroup: isRoot,
+    };
+    */
+
+
+  //getProvCity() { return CityProvider };
 }

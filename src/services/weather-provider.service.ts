@@ -16,7 +16,7 @@ export class WeatherProvider {
     return this.http.get(this.url + lat + '&lon=' + lon + "&key=" + this.apiKey + '&units=' + units);
   }
 
-  getProvWeather() { return WeatherProvider };
+  //getProvWeather() { return WeatherProvider };
 
   //this.http.get('/app/lists.json').map((res:Response) => res.json());
 

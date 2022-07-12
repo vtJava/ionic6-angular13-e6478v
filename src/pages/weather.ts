@@ -21,7 +21,7 @@ export class WeatherComponent implements OnInit {
     lat: string;
     lng: string;
     weather = true;
-  
+    
     constructor(
       public http: HttpClient,public navCtrl: NavController,public wp: WeatherProvider,
       private storage: Storage
