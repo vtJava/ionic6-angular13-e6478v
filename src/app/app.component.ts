@@ -17,14 +17,15 @@ anOtherPage: WeatherComponent;
   capital: Object = {};  //replace any with Object 
 
   constructor(private http: HttpClient, public navCtrl: NavController) {
+    this.navCtrl;
     http
       .get('https://restcountries.com/v3.1/capital/Dublin')
       .subscribe((stuff) => (this.capital = stuff));
   }
 
-  goAnOtherPage() {
-    this.navCtrl.setRoot(WeatherComponent);
-  }
+  //goAnOtherPage() {
+ //   this.navCtrl.push(WeatherComponent);
+  //}
 
   ionViewDidEnter() {
    // return HttpHeaders;

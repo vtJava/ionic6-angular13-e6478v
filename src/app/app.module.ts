@@ -3,10 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { AppComponent } from './app.component';
-import { WeatherComponent } from './pages/weather.component';
+import { WeatherComponent } from '../pages/weather.component';
 import { HttpClientModule } from '@angular/common/http';
-import { WeatherProvider } from '../services/weather-provider';
-import { CityProvider } from '../services/CityProvider';
+import { WeatherProvider } from '../services/weather-provider.service';
+import { CityProvider } from '../services/city-provider.service';
 
 @NgModule({
   imports: [
