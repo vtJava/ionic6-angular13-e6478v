@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Injectable, VERSION } from '@angular/core';
 import { WeatherComponent } from '../pages/weather';
+import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'my-app',
@@ -15,7 +16,8 @@ anOtherPage: WeatherComponent;
   name = 'Ionic 6 Angular ' + VERSION.major;
   capital: Object = {};  //replace any with Object 
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, public navCtrl: NavController) {
+    this.navCtrl;
     http
       .get('https://restcountries.com/v3.1/capital/Dublin')
       .subscribe((stuff) => (this.capital = stuff));
