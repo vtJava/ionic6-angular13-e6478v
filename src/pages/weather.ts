@@ -2,7 +2,7 @@ import { Component, Input, VERSION, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { NavController } from '@ionic/angular';
 import { WeatherProvider } from '../services/weather-provider.service';
-import { CityProvider } from '../services/CityProvider';
+import { CityProvider } from '../services/city-provider.service';
 
 @Component({
  // selector: 'my-app',
