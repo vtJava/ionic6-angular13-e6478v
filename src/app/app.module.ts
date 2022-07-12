@@ -7,7 +7,7 @@ import { WeatherComponent } from '../pages/weather';
 import { HttpClientModule } from '@angular/common/http';
 import { WeatherProvider } from '../services/weather-provider.service';
 import { CityProvider } from '../services/city-provider.service';
-
+import { NavController } from '@ionic/angular';
 
 @NgModule({
   imports: [
@@ -19,7 +19,7 @@ import { CityProvider } from '../services/city-provider.service';
     
   ],
   declarations: [AppComponent, WeatherComponent],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent, WeatherComponent, NavController], //added NavController
   providers: [CityProvider, WeatherProvider],
   schemas: [NO_ERRORS_SCHEMA],
 })
