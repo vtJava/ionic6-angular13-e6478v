@@ -5,9 +5,6 @@ import { WeatherProvider } from '../services/weather-provider.service';
 import { CityProvider } from '../services/city-provider.service';
 
 @Component({
- // selector: 'my-app',
- // templateUrl: './app.component.html',
- // styleUrls: ['./app.component.css'],
   selector: 'weather',
   templateUrl:'./weather.component.html',
   providers: [ WeatherProvider, CityProvider ],

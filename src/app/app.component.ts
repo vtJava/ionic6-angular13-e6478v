@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Injectable, VERSION } from '@angular/core';
-import { weather } from '../pages/weather';
+import { WeatherComponent } from '../pages/weather';
 
 @Component({
   selector: 'my-app',
@@ -10,7 +10,7 @@ import { weather } from '../pages/weather';
 @Injectable()
 export class AppComponent{
   
-anOtherPage: AnOtherPage;
+anOtherPage: WeatherComponent;
 
   name = 'Ionic 6 Angular ' + VERSION.major;
   capital: Object = {};  //replace any with Object 
@@ -22,7 +22,7 @@ anOtherPage: AnOtherPage;
   }
 
   goAnOtherPage() {
-    this.navCtrl.setRoot(weather);
+    this.navCtrl.setRoot(WeatherComponent);
   }
 
   ionViewDidEnter() {
