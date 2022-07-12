@@ -6,7 +6,7 @@ import { CityProvider } from '../services/city-provider.service';
 
 @Component({
   selector: 'weather',
-  templateUrl:'./weather.component.html',
+  templateUrl:'./weather.html',
   providers: [ WeatherProvider, CityProvider ],
 })
 export class WeatherComponent implements OnInit {

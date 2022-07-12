@@ -13,6 +13,7 @@
     "@angular/router": "^14.0.5",
     "@ionic/angular": "^6.1.13",
     "@ionic/angular-toolkit": "^6.1.0",
+    "ionic": "^5.4.16",
     "ionicons": "^6.0.2",
     "rxjs": "^7.5.5",
     "tslib": "^2.4.0",

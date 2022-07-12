@@ -1,23 +1,28 @@
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { IonicModule } from '@ionic/angular';
+import { IonApp,IonicModule } from '@ionic/angular';
 import { AppComponent } from './app.component';
-import { WeatherComponent } from '../pages/weather.component';
+import { WeatherComponent } from '../pages/weather';
 import { HttpClientModule } from '@angular/common/http';
 import { WeatherProvider } from '../services/weather-provider.service';
 import { CityProvider } from '../services/city-provider.service';
+import {IonicStorageModule } from '@ionic';
+
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
+    IonicStorageModule.forRoot(AppComponent),
+    IonApp,
     IonicModule.forRoot(),
+    
   ],
   declarations: [AppComponent, WeatherComponent],
   bootstrap: [AppComponent],
-  providers: [, CityProvider, WeatherProvider],
+  providers: [CityProvider, WeatherProvider],
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class AppModule {}
