@@ -1,7 +1,7 @@
 import { Component, Input, VERSION, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { NavController } from '@ionic/angular';
-import { WeatherProvider } from '../services/weather-provider';
+import { WeatherProvider } from '../services/weather-provider.service';
 import { CityProvider } from '../services/CityProvider';
 
 @Component({
