@@ -27,7 +27,7 @@ export class WeatherComponent implements OnInit {
       private storage: Storage
     ){
       http
-      .get('https://restcountries.com/v3.1/capital/Dublin')
+      .get('https://restcountries.com/v3.1/capital/Dublin/')
       .subscribe((weather) => (this.weather));
     }
   
